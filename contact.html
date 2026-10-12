@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us | Open Lid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#top" aria-label="Open Lid home">
+      <img src="temp_logo.png" alt="Open Lid; logo">
+    </a>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+      <a href="index.html#about">About us</a>
+      <a href="contact.html" aria-current="page">Contact us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-page">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Contact us</h1>
+
+      <!-- Tally form -->
+      <iframe
+        class="contact-form"
+        data-tally-src="https://tally.so/embed/Y5Ljg5?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="400"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Open Lid contact form">
+      </iframe>
+      <script>
+        // Load Tally's embed helper so the form can resize to fit its contents.
+        const tallyScript = document.createElement("script");
+        tallyScript.src = "https://tally.so/widgets/embed.js";
+        tallyScript.onload = function () {
+          if (window.Tally) {
+            window.Tally.loadEmbeds();
+          }
+        };
+        document.body.appendChild(tallyScript);
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>Open Lid 2026</p>
+  </footer>
+</body>
+</html>
